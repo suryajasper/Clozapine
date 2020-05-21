@@ -21,7 +21,8 @@ public class Player_Controller : MonoBehaviour
     public float speed = 12f;
     public float gravity = -9.81f;
 
-    private bool isClimbing;
+    [HideInInspector] public bool isClimbing;
+    private bool canClimb = true;
 
     void Start()
     {
@@ -32,7 +33,7 @@ public class Player_Controller : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Climbable"))
+        if (other.gameObject.CompareTag("Climbable") && canClimb)
         {
             cam.GetComponent<cameraScript>().OffsetForwardPosition(-3f);
             isClimbing = true;
@@ -49,6 +50,19 @@ public class Player_Controller : MonoBehaviour
             animator.SetBool("isClimbing", false);
         }
     }
+
+    private IEnumerator stopClimbing()
+    {
+        isClimbing = false;
+        Debug.Log("can't climb");
+        canClimb = false;
+        animator.SetBool("isClimbing", false);
+
+        yield return new WaitForSeconds(2f);
+        Debug.Log("can now climb again");
+        canClimb = true;
+    }
+
 
     private void Move()
     {
@@ -89,7 +103,9 @@ public class Player_Controller : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
-            move += transform.up * -10f;
+            Debug.Log("stop climbing");
+            move += transform.forward * -2f;
+            StartCoroutine(stopClimbing());
         }
 
         controller.Move(move * Time.deltaTime);
