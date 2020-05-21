@@ -7,13 +7,21 @@ public class cameraScript : MonoBehaviour
     public float sensitivity;
 
     public Transform player;
+    [SerializeField] private Vector3 offset;
 
     private float xRot = 0.0f;
 
     void Start()
     {
+        transform.position = player.transform.position + offset;
         Cursor.lockState = CursorLockMode.Locked;
     }
+
+    public void OffsetForwardPosition(float zoffset)
+    {
+        transform.position += transform.forward * zoffset;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -24,6 +32,6 @@ public class cameraScript : MonoBehaviour
         xRot = Mathf.Clamp(xRot, -90f, 90f);
 
         transform.localRotation = Quaternion.Euler(xRot, 0f, 0f);
-        player.Rotate(Vector3.up * mouseX);   
+        player.Rotate(Vector3.up * mouseX);
     }
 }
