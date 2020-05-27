@@ -1,0 +1,720 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Fort_Tassion Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"Mac",
+				"Debug",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"Mac",
+				"Debug",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Fort_Tassion Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"Mac",
+				"Debug",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"Mac",
+				"DebugGame",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"Mac",
+				"DebugGame",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Fort_Tassion Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"Mac",
+				"DebugGame",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"Mac",
+				"Development",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"Mac",
+				"Development",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Fort_Tassion Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"Mac",
+				"Development",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"Mac",
+				"Shipping",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"Mac",
+				"Shipping",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Fort_Tassion Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"Mac",
+				"Shipping",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"Mac",
+				"Test",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"Mac",
+				"Test",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Fort_Tassion Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"Mac",
+				"Test",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"IOS",
+				"Debug",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"IOS",
+				"Debug",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Fort_Tassion IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"IOS",
+				"Debug",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"IOS",
+				"DebugGame",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"IOS",
+				"DebugGame",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Fort_Tassion IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"IOS",
+				"DebugGame",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"IOS",
+				"Development",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"IOS",
+				"Development",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Fort_Tassion IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"IOS",
+				"Development",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"IOS",
+				"Shipping",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"IOS",
+				"Shipping",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Fort_Tassion IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"IOS",
+				"Shipping",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"IOS",
+				"Test",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"IOS",
+				"Test",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Fort_Tassion IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_Tassion IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_Tassion",
+				"IOS",
+				"Test",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_TassionEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_TassionEditor",
+				"Mac",
+				"Debug",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_TassionEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_TassionEditor",
+				"Mac",
+				"Debug",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Fort_TassionEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_TassionEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_TassionEditor",
+				"Mac",
+				"Debug",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_TassionEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_TassionEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_TassionEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_TassionEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Fort_TassionEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_TassionEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_TassionEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_TassionEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_TassionEditor",
+				"Mac",
+				"Development",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_TassionEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_TassionEditor",
+				"Mac",
+				"Development",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Fort_TassionEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		},
+		{
+			"label": "Fort_TassionEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Fort_TassionEditor",
+				"Mac",
+				"Development",
+				"/Users/suryajasper2004/Documents/GitHub/Fort-Tassion/Fort_Tassion/Fort_Tassion.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.24"
+			}
+		}
+	]
+}
