@@ -68,7 +68,7 @@ public class Gun : MonoBehaviour
 
     public static Quaternion Vector3ToQuaternion(Vector3 vec3)
     {
-        return Quaternion.Euler(vec3.x, vec3.y, vec3.z);
+        return Quaternion.Euler(vec3);
     }
 
     public void Activate()

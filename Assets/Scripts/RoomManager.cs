@@ -8,6 +8,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
     public Transform spawnPoint;
     public GameObject playerPref;
     public bool isConnected = false;
+    public GameObject camera;
 
     private void Start()
     {
@@ -35,6 +36,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
     {
         GameObject pl = PhotonNetwork.Instantiate(playerPref.name, spawnPoint.position, spawnPoint.rotation, 0) as GameObject;
         pl.GetComponent<PlayerController3D>().enabled = true;
+        camera.SetActive(false);
         pl.GetComponent<PlayerController3D>().multiplayerGraphics.SetActive(false);
     }
 
