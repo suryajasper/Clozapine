@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 3}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 678, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 36
+  controlID: 123
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 37
+  controlID: 124
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 38
+  controlID: 125
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -398,21 +398,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 060202001202020018020200
+      m_ExpandedIDs: 765bfbffb064fbff6065fbff50fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: gunManager
+        m_OriginalName: gunManager
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 272528
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 9}
       m_SearchString: 
@@ -451,16 +451,16 @@ MonoBehaviour:
   m_ShowContextualTools: 0
   m_WindowGUID: c61594573bc014d9f9dccdbb58711de1
   m_Gizmos: 1
-  m_SceneIsLit: 0
+  m_SceneIsLit: 1
   m_SceneLighting: 0
   m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.0804974, y: 2.7669601, z: -8.205078}
+    m_Target: {x: -21.317953, y: -1.5634112, z: 12.110061}
     speed: 2
-    m_Value: {x: -1.0804974, y: 2.7669601, z: -8.205078}
+    m_Value: {x: -21.317953, y: -1.5634112, z: 12.110061}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -473,7 +473,7 @@ MonoBehaviour:
   m_SceneViewState:
     showFog: 1
     showMaterialUpdate: 1
-    showSkybox: 0
+    showSkybox: 1
     showFlares: 1
     showImageEffects: 1
     showParticleSystems: 1
@@ -506,17 +506,17 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: 1, z: 0, w: 0}
+    m_Target: {x: -0.08812033, y: 0.3637924, z: -0.034594547, w: -0.92665833}
     speed: 2
-    m_Value: {x: 0, y: 1, z: 0, w: 0}
+    m_Value: {x: -0.08812021, y: 0.3637919, z: -0.034594502, w: -0.92665714}
   m_Size:
-    m_Target: 4.6755314
+    m_Target: 33.551105
     speed: 2
-    m_Value: 4.6755314
+    m_Value: 33.551105
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.49721274
@@ -1106,28 +1106,28 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Photon/PhotonUnityNetworking/Resources
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: /Users/suryajasper2004/Desktop/unity projects/Clozapine
+  m_LastProjectPath: /Users/suryajasper2004/Documents/GitHub/Clozapine
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 81.00012}
-    m_SelectedIDs: de3d0100
-    m_LastClickedID: 81374
-    m_ExpandedIDs: 00000000942c0100b83c0100ba3c0100bc3c0100be3c0100c03c0100c23c0100c43c0100c63c0100c83c0100ca3c0100cc3c0100ce3c0100d03c0100d23c0100903d010000ca9a3b
+    scrollPos: {x: 0, y: 1199}
+    m_SelectedIDs: 56400100
+    m_LastClickedID: 82006
+    m_ExpandedIDs: 00000000be2e0100323f0100343f0100363f0100383f01003a3f01003c3f01003e3f0100403f0100423f0100443f0100463f0100483f01004a3f01004c3f01004e3f0100503f0100623f0100ae3f0100b83f0100ba3f0100c23f0100ea3f0100064001000c400100104001002c4001003440010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: AssetStoreOriginals
+      m_OriginalName: AssetStoreOriginals
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 81930
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -1141,7 +1141,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000942c0100b83c0100ba3c0100bc3c0100be3c0100c03c0100c23c0100c43c0100c63c0100c83c0100ca3c0100cc3c0100ce3c0100d03c0100d23c0100
+    m_ExpandedIDs: 00000000be2e0100323f0100343f0100363f0100383f01003a3f01003c3f01003e3f0100403f0100423f0100443f0100463f0100483f01004a3f01004c3f01004e3f0100503f0100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1168,8 +1168,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c62300002e0a0000780900007c150100900d0000e8390000bc5600007e2e0000c8420000384a000094750400f2301800fa30000044760000e4a900002ac201005a230700d83900003e3a000000000000dc5a0000d85a0000e46a00006c680000a83e000004c80000dc53000070500000984c0000d8b50000ae3001000a410000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c62300002e0a0000780900007c150100900d0000e8390000bc5600007e2e0000c8420000384a000094750400f2301800fa30000044760000e4a900002ac201005a230700d83900003e3a000000000000dc5a0000d85a0000e46a00006c680000a83e000004c80000dc53000070500000984c0000d8b50000ae3001000a41000044430000d4440000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1251,7 +1251,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 87154
+  m_LastSelectedObjectID: 305572
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52

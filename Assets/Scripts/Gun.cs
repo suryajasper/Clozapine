@@ -24,7 +24,6 @@ public class Gun : MonoBehaviour
 
     [Header("animations")]
     public AnimationClip [] reload;
-    public AnimationClip aim;
 
     [Header("Info")]
     public string gunName;
@@ -34,21 +33,33 @@ public class Gun : MonoBehaviour
 
     [Header("Prefabs")]
     public ParticleSystem muzzleFlash;
-    public GameObject hitParticle;
+    public ParticleSystem bloodEffect;
+    public ParticleSystem metalHitEffect;
 
     private int currentMagCap;
     private int currentTotalCap;
     private bool activated;
     private bool isReloading;
-    private bool scopedUp;
     private float reloadLength;
 
     private float shootTimer = -1f;
     private float reloadTimer = -1f;
 
     [HideInInspector] public Animator animator;
-    private Quaternion originalRotation;
     private CameraLook camera;
+
+    void Start()
+    {
+        currentTotalCap = maxAmmo;
+        currentMagCap = magCap;
+        animator = GetComponent<Animator>();
+        Activate();
+        camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraLook>();
+
+        reloadLength = 0f;
+        foreach (AnimationClip reloadClip in reload)
+            reloadLength += reloadClip.length;
+    }
 
     public void DeActivate()
     {
@@ -72,11 +83,6 @@ public class Gun : MonoBehaviour
         ammoUI.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = currentMagCap.ToString();
         ammoUI.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = currentTotalCap.ToString();
         ammoUI.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = gunName;
-    }
-
-    public void IsAimed()
-    {
-        scopedUp = true;
     }
 
     private IEnumerator MakeInactiveAfterSeconds(float secs, GameObject gameObj)
@@ -118,12 +124,12 @@ public class Gun : MonoBehaviour
                         enemy.applyDamage(damage * 1.25f);
                     else
                         enemy.applyDamage(damage);
-                    /*
-                    GameObject.FindGameObjectWithTag("HitFeedback").SetActive(true);
-                    GameObject.FindGameObjectWithTag("HitFeedback").GetComponent<Animator>().Play("hit feedback");
-                    StartCoroutine(MakeInactiveAfterSeconds(0.75f, GameObject.FindGameObjectWithTag("HitFeedback")));*/
+                    Destroy(Instantiate(bloodEffect, hit.point, Quaternion.identity), 1f);
                 }
-                Destroy(Instantiate(hitParticle, hit.point, Quaternion.identity), 5f);
+                else
+                {
+                    Destroy(Instantiate(metalHitEffect, hit.point, Quaternion.identity), 4f);
+                }
             }
         }
         if (currentMagCap == 0)
@@ -136,20 +142,6 @@ public class Gun : MonoBehaviour
     private void StopShooting()
     {
         shootTimer = -1f;
-    }
-
-    void Start()
-    {
-        currentTotalCap = maxAmmo;
-        currentMagCap = magCap;
-        animator = GetComponent<Animator>();
-        Activate();
-        camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraLook>();
-        originalRotation = transform.parent.rotation;
-
-        reloadLength = 0f;
-        foreach (AnimationClip reloadClip in reload)
-            reloadLength += reloadClip.length;
     }
 
     void Update()

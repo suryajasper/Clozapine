@@ -65,16 +65,16 @@
   <ItemGroup>
     <Compile Include="Assets\Photon\PhotonUnityNetworking\UtilityScripts\Culling\Editor\CullAreaEditor.cs" />
     <Reference Include="UnityEditor.UI">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Hub/Editor/2019.3.2f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -278,16 +278,19 @@
       <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/PackageCache/com.unity.burst@1.1.1/Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/PackageCache/com.unity.render-pipelines.core@7.1.8/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/PackageCache/com.unity.render-pipelines.core@7.1.8/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Applications/Unity/Hub/Editor/2019.3.2f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

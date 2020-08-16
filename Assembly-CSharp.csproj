@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\PlayerController3D.cs" />
     <Compile Include="Assets\Scripts\RoomManager.cs" />
     <Compile Include="Assets\Scripts\TimerFiller.cs" />
+    <Compile Include="Assets\Scripts\animationManager.cs" />
     <Compile Include="Assets\Scripts\enemyScript.cs" />
     <Compile Include="Assets\Shared\Ramps\Runtime\RampAsset.cs" />
     <Compile Include="Assets\Shared\Scripts\AdjustTimeScale.cs" />
@@ -82,7 +83,6 @@
     <Compile Include="Assets\Shared\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Shared\Scripts\SimpleCharacterMotor.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\animationManager.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\Assets_1\Models\Weapons\Other\Scope\Zoom.shader" />
     <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
@@ -114,70 +114,88 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.Editor">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Animation.Rigging">
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.Animation.Rigging.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Animation.Rigging.Editor">
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.Animation.Rigging.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Hub/Editor/2019.3.2f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -357,10 +375,13 @@
       <HintPath>/Applications/Unity/Hub/Editor/2019.3.2f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>/Users/suryajasper2004/Desktop/unity projects/Clozapine/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>/Users/suryajasper2004/Documents/GitHub/Clozapine/Library/PackageCache/com.unity.burst@1.1.1/Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Applications/Unity/Hub/Editor/2019.3.2f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
