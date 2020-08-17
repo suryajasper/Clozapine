@@ -28963,7 +28963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitLayers:
     serializedVersion: 2
-    m_Bits: 4608
+    m_Bits: 6656
   adsRecoil: 3
   hipRecoil: 0.03
   fireRate: 0.4
@@ -29983,7 +29983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitLayers:
     serializedVersion: 2
-    m_Bits: 4608
+    m_Bits: 6656
   adsRecoil: 5
   hipRecoil: 0.01
   fireRate: 1.4
@@ -34967,7 +34967,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitLayers:
     serializedVersion: 2
-    m_Bits: 4608
+    m_Bits: 6656
   adsRecoil: 6
   hipRecoil: 0.06
   fireRate: 1.4
@@ -63656,7 +63656,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitLayers:
     serializedVersion: 2
-    m_Bits: 4608
+    m_Bits: 6656
   adsRecoil: 2
   hipRecoil: 0.02
   fireRate: 0.15
@@ -63746,7 +63746,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitLayers:
     serializedVersion: 2
-    m_Bits: 4608
+    m_Bits: 6656
   adsRecoil: 3
   hipRecoil: 0.04
   fireRate: 0.1
@@ -64468,10 +64468,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplayerGraphics: {fileID: 4805873801396031625}
+  ragdollPrefab: {fileID: 6171310138564629737, guid: a1df8212406024703b0ad7357cdcc657,
+    type: 3}
   animManager: {fileID: 3725714562755259589}
   cam: {fileID: 2298686464888398133}
   gunManager: {fileID: 2298686464835142331}
   gunPositionAnimator: {fileID: 2212105041435626492}
+  health: 100
+  head: {fileID: 2120747003080436649}
   groundCheck: {fileID: 1612730536754520141}
   distanceToGround: 0.4
   groundMask:
@@ -65773,6 +65777,7 @@ GameObject:
   - component: {fileID: 4524865902414941824}
   - component: {fileID: 9026084248705297709}
   - component: {fileID: 4941771412787536312}
+  - component: {fileID: 1722661115133411858}
   m_Layer: 11
   m_Name: DROP
   m_TagString: Untagged
@@ -65896,6 +65901,19 @@ MonoBehaviour:
   - rig: {fileID: 6553369938496501501}
     active: 1
   m_Effectors: []
+--- !u!65 &1722661115133411858
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4805873801396031625}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.48287913, y: 1.4505664, z: 0.4471093}
+  m_Center: {x: 0, y: -0.23034625, z: 0}
 --- !u!1 &4954672508551627314
 GameObject:
   m_ObjectHideFlags: 0
@@ -65905,6 +65923,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2750225301902255916}
+  - component: {fileID: 2120747003080436649}
   m_Layer: 11
   m_Name: mixamorig:Head
   m_TagString: Untagged
@@ -65927,6 +65946,19 @@ Transform:
   m_Father: {fileID: 6018773570740304914}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &2120747003080436649
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4954672508551627314}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.15613502
+  m_Center: {x: 0.007603541, y: 0.10949795, z: 0.029999996}
 --- !u!1 &5137720328769977934
 GameObject:
   m_ObjectHideFlags: 0

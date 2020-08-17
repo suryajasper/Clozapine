@@ -1,10 +1,13 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
+using Photon.Pun;
+using UnityEngine.SceneManagement;
 
 public class PlayerController3D : MonoBehaviour
 {
     public GameObject multiplayerGraphics;
+    public GameObject ragdollPrefab;
 
     private CharacterController controller;
     private Vector3 velocity;
@@ -14,6 +17,10 @@ public class PlayerController3D : MonoBehaviour
     public Camera cam;
     public GunManager gunManager;
     [HideInInspector] public Animator gunPositionAnimator;
+
+    [Header("Damage")]
+    public float health;
+    public Collider head;
 
     [Header("Ground Check")]
     [SerializeField] private Transform groundCheck;
@@ -87,5 +94,22 @@ public class PlayerController3D : MonoBehaviour
         controller.Move(move * Time.deltaTime);
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+    }
+
+    [PunRPC]
+    public void applyDamage(float dmg)
+    {
+        health -= dmg;
+        if (health <= 0f)
+            DIE();
+    }
+
+    [PunRPC]
+    public void DIE()
+    {
+        Destroy(Instantiate(ragdollPrefab, transform.position, transform.rotation), 8f);
+        PhotonNetwork.Destroy(gameObject);
+        PhotonNetwork.Disconnect();
+        SceneManager.LoadScene(0);
     }
 }

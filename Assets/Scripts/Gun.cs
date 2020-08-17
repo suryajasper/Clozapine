@@ -117,7 +117,7 @@ public class Gun : MonoBehaviour
             }
             if (Physics.Raycast(transform.position, rayRot, out hit, range, hitLayers))
             {
-                enemyScript enemy = hit.collider.gameObject.GetComponent<enemyScript>();
+                PlayerController3D enemy = hit.collider.gameObject.GetComponent<PlayerController3D>();
                 if (enemy != null)
                 {
                     if (enemy.head.Equals(hit.collider))

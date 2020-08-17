@@ -36,6 +36,8 @@ MonoBehaviour:
   - ClickRpc
   - DestroyRpc
   - playAnimPV
+  - applyDamage
+  - DIE
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 0

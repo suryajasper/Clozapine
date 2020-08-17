@@ -5104,6 +5104,7 @@ MonoBehaviour:
   head: {fileID: 326600341}
   body: {fileID: 326600342}
   health: 100
+  ragdollPrefab: {fileID: 0}
 --- !u!65 &326600341
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9590,7 +9591,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18306
+  m_Name: pb_Mesh20760
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10160,6 +10161,7 @@ MonoBehaviour:
   head: {fileID: 1019798933}
   body: {fileID: 1019798934}
   health: 100
+  ragdollPrefab: {fileID: 0}
 --- !u!65 &1019798933
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10803,6 +10805,7 @@ MonoBehaviour:
   head: {fileID: 1326309662}
   body: {fileID: 1326309663}
   health: 100
+  ragdollPrefab: {fileID: 0}
 --- !u!65 &1326309662
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10811,7 +10814,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326309660}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.31059977, z: 1}
@@ -10824,7 +10827,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326309660}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.6949035, z: 1}
@@ -10928,6 +10931,7 @@ MonoBehaviour:
   head: {fileID: 1394897274}
   body: {fileID: 1394897275}
   health: 100
+  ragdollPrefab: {fileID: 0}
 --- !u!65 &1394897274
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10936,7 +10940,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394897272}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.31059977, z: 1}
@@ -10949,7 +10953,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394897272}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.6949035, z: 1}
@@ -12232,7 +12236,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18364
+  m_Name: pb_Mesh20818
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
