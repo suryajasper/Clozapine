@@ -45,6 +45,8 @@ public class Gun : MonoBehaviour
     private float shootTimer = -1f;
     private float reloadTimer = -1f;
 
+    private GameObject crossHairs;
+
     [HideInInspector] public Animator animator;
     private CameraLook camera;
 
@@ -59,6 +61,7 @@ public class Gun : MonoBehaviour
         reloadLength = 0f;
         foreach (AnimationClip reloadClip in reload)
             reloadLength += reloadClip.length;
+        crossHairs = GameObject.FindGameObjectWithTag("Crosshairs");
     }
 
     public void DeActivate()
@@ -153,10 +156,12 @@ public class Gun : MonoBehaviour
             animator.SetInteger("Reload", -1);
             isReloading = false;
             reloadTimer = -1f;
+            crossHairs.SetActive(false);
         }
         if (Input.GetMouseButtonUp(1))
         {
             animator.SetBool("Sight", false);
+            crossHairs.SetActive(true);
         }
         if (Input.GetMouseButtonDown(0))
         {
@@ -180,7 +185,8 @@ public class Gun : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             isReloading = true;
-            GameObject.FindGameObjectWithTag("ReloadFill").GetComponent<TimerFiller>().StartTimer(reloadLength);
+            if (currentTotalCap != 0 && currentMagCap != magCap)
+                GameObject.FindGameObjectWithTag("ReloadFill").GetComponent<TimerFiller>().StartTimer(reloadLength);
         }
         if (isReloading && currentTotalCap != 0 && currentMagCap != magCap)
         {
