@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
+using Photon.Pun;
 
-public class CameraLook : MonoBehaviour
+public class CameraLook : MonoBehaviourPunCallbacks
 {
     [SerializeField] private Transform noRecoilCam;
 
@@ -42,6 +43,7 @@ public class CameraLook : MonoBehaviour
 
     void Update()
     {
+        if (!photonView.IsMine) return;
         float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * sensitivity * Time.deltaTime;
 

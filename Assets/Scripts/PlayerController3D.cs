@@ -4,10 +4,12 @@ using UnityEngine;
 using Photon.Pun;
 using UnityEngine.SceneManagement;
 
-public class PlayerController3D : MonoBehaviour
+public class PlayerController3D : MonoBehaviourPunCallbacks
 {
     public GameObject multiplayerGraphics;
     public GameObject ragdollPrefab;
+
+    public GameObject cameraGameObject;
 
     private CharacterController controller;
     private Vector3 velocity;
@@ -34,11 +36,14 @@ public class PlayerController3D : MonoBehaviour
     
     void Start()
     {
+        cameraGameObject.SetActive(photonView.IsMine);
         controller = GetComponent<CharacterController>();
     }
 
     void Update()
     {
+        if (!photonView.IsMine) return;
+
         bool isGrounded = Physics.CheckSphere(groundCheck.position, distanceToGround, groundMask);
 
         if (isGrounded)

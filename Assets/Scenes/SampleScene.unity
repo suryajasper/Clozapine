@@ -5425,6 +5425,8 @@ MonoBehaviour:
   singleShots: 0
   isShotgun: 0
   reload: []
+  equipSound: {fileID: 0}
+  gunfireSound: {fileID: 0}
   gunName: AK-47
   muzzleLoc: {fileID: 2086569142}
   muzzleFlash: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc,

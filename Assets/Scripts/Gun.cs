@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Photon.Pun;
 
-public class Gun : MonoBehaviour
+public class Gun : MonoBehaviourPunCallbacks
 {
     public static float maxReload = 7f;
     [SerializeField] private LayerMask hitLayers;
@@ -170,6 +171,7 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
+        if (!photonView.IsMine) return;
         //adsArchive();
         if (Input.GetMouseButtonDown(1))
         {

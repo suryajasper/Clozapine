@@ -63668,7 +63668,7 @@ MonoBehaviour:
   range: 50
   mobility: 62
   adsSpeed: 0.25
-  magCap: 40
+  magCap: 35
   maxAmmo: 120
   singleShots: 0
   isShotgun: 0
@@ -64478,6 +64478,7 @@ MonoBehaviour:
   multiplayerGraphics: {fileID: 4805873801396031625}
   ragdollPrefab: {fileID: 6171310138564629737, guid: a1df8212406024703b0ad7357cdcc657,
     type: 3}
+  cameraGameObject: {fileID: 2298686464888398094}
   animManager: {fileID: 3725714562755259589}
   cam: {fileID: 2298686464888398133}
   gunManager: {fileID: 2298686464835142331}
@@ -65801,7 +65802,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4805873801396031625}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.019814968, y: 0.967, z: -0.022}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.8700988, y: 1.8700988, z: 1.8700988}
   m_Children:
   - {fileID: 5139814389269865627}
@@ -66960,7 +66961,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6480883478301995908
 RectTransform:
   m_ObjectHideFlags: 0
@@ -66968,17 +66969,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7598092360279459652}
-  m_LocalRotation: {x: 0.00000023655593, y: -0.70710695, z: -0.00000023841858, w: 0.70710665}
-  m_LocalPosition: {x: 0, y: 0, z: -0.507}
-  m_LocalScale: {x: 0.00549697, y: 0.00549697, z: 0.00549697}
+  m_LocalRotation: {x: 5.984102e-14, y: -0.99555725, z: 0.094158694, w: -6.217249e-15}
+  m_LocalPosition: {x: 0, y: 0, z: -0.3293}
+  m_LocalScale: {x: 0.0009136171, y: 0.0009136171, z: 0.0009136171}
   m_Children:
   - {fileID: 1898606442058954961}
   m_Father: {fileID: 2303276270679302668}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 10.806, y: -180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.141, y: 0.086}
+  m_AnchoredPosition: {x: 0.0032, y: 0.2712}
   m_SizeDelta: {x: 100, y: 37.5981}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &6174709202877611931

@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public class GunManager : MonoBehaviour
+public class GunManager : MonoBehaviourPunCallbacks
 {
     [HideInInspector] public List<Gun> guns;
     [HideInInspector] public int current;
@@ -21,7 +22,8 @@ public class GunManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (!photonView.IsMine) return;
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             guns[current].gameObject.SetActive(false);
             if (++current == guns.Count) current = 0;
