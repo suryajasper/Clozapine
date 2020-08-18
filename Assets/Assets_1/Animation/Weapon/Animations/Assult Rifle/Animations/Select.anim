@@ -37300,9 +37300,8 @@ AnimationClip:
   m_Events:
   - time: 0.033333335
     functionName: PlaySound
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: a92d3ccc1ab68e24fb3c0b74fb4def1d,
-      type: 3}
+    data: equip
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

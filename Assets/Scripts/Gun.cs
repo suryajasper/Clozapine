@@ -25,6 +25,10 @@ public class Gun : MonoBehaviour
     [Header("animations")]
     public AnimationClip [] reload;
 
+    [Header("Audio")]
+    public AudioClip equipSound;
+    public AudioClip gunfireSound;
+
     [Header("Info")]
     public string gunName;
 
@@ -52,6 +56,7 @@ public class Gun : MonoBehaviour
 
     void Start()
     {
+        gameObject.AddComponent<AudioSource>();
         currentTotalCap = maxAmmo;
         currentMagCap = magCap;
         animator = GetComponent<Animator>();
@@ -145,6 +150,22 @@ public class Gun : MonoBehaviour
     private void StopShooting()
     {
         shootTimer = -1f;
+    }
+
+    public void PlaySound(string name)
+    {
+        AudioSource player = GetComponent<AudioSource>();
+        switch (name)
+        {
+            case "equip":
+                player.clip = equipSound;
+                GetComponent<AudioSource>().Play();
+                break;
+            case "gunfire":
+                player.clip = gunfireSound;
+                GetComponent<AudioSource>().Play();
+                break;
+        }
     }
 
     void Update()

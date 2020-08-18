@@ -28976,6 +28976,8 @@ MonoBehaviour:
   isShotgun: 0
   reload:
   - {fileID: 7400000, guid: 80a243acec3784e2a97b9e070a7bcc99, type: 2}
+  equipSound: {fileID: 8300000, guid: 0d70cbf0c20c244bbab22161c3bf6154, type: 3}
+  gunfireSound: {fileID: 0}
   gunName: Pistol
   muzzleLoc: {fileID: 0}
   muzzleFlash: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
@@ -29947,7 +29949,7 @@ Transform:
   - {fileID: 2303082896855061761}
   - {fileID: 2303241383553120279}
   m_Father: {fileID: 2298686464835142328}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &2212858219511262921
 Animator:
@@ -29996,6 +29998,8 @@ MonoBehaviour:
   isShotgun: 0
   reload:
   - {fileID: 7400000, guid: 0fd5fc0d9cc3a42cc96febec746f237c, type: 2}
+  equipSound: {fileID: 8300000, guid: 0d70cbf0c20c244bbab22161c3bf6154, type: 3}
+  gunfireSound: {fileID: 0}
   gunName: Sniper
   muzzleLoc: {fileID: 0}
   muzzleFlash: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
@@ -34931,7 +34935,7 @@ Transform:
   - {fileID: 2303173964142869467}
   - {fileID: 2299560290210238585}
   m_Father: {fileID: 2298686464835142328}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &2212541581265197271
 Animator:
@@ -34982,6 +34986,8 @@ MonoBehaviour:
   - {fileID: 7400000, guid: 3f6f65b0030164272a3549dd9de50680, type: 2}
   - {fileID: 7400000, guid: 092ed733873b6415393e136bf044d502, type: 2}
   - {fileID: 7400000, guid: 113572aeb39c94b349b50429bee15d95, type: 2}
+  equipSound: {fileID: 8300000, guid: 0d70cbf0c20c244bbab22161c3bf6154, type: 3}
+  gunfireSound: {fileID: 0}
   gunName: Pump Shotty
   muzzleLoc: {fileID: 0}
   muzzleFlash: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
@@ -63668,6 +63674,8 @@ MonoBehaviour:
   isShotgun: 0
   reload:
   - {fileID: 7400000, guid: 9bf7ce1f5a4b94ca69ac0adc56ec0d02, type: 2}
+  equipSound: {fileID: 8300000, guid: 0d70cbf0c20c244bbab22161c3bf6154, type: 3}
+  gunfireSound: {fileID: 0}
   gunName: AK-47
   muzzleLoc: {fileID: 0}
   muzzleFlash: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
@@ -63709,7 +63717,7 @@ Transform:
   - {fileID: 2299155334260070847}
   - {fileID: 2299343546212078675}
   m_Father: {fileID: 2298686464835142328}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &2212069387298669791
 Animator:
@@ -63758,6 +63766,8 @@ MonoBehaviour:
   isShotgun: 0
   reload:
   - {fileID: 7400000, guid: a14ce590a34c34c33bb45ab63b7c8963, type: 2}
+  equipSound: {fileID: 8300000, guid: 0d70cbf0c20c244bbab22161c3bf6154, type: 3}
+  gunfireSound: {fileID: 0}
   gunName: SMG
   muzzleLoc: {fileID: 0}
   muzzleFlash: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
@@ -64239,9 +64249,9 @@ Transform:
   m_Children:
   - {fileID: 2299535818630637216}
   - {fileID: 2303232563383784206}
+  - {fileID: 2299133852051897001}
   - {fileID: 2299170647574092491}
   - {fileID: 2303255214154864065}
-  - {fileID: 2299133852051897001}
   m_Father: {fileID: 2298686464888398089}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -65791,7 +65801,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4805873801396031625}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.019814968, y: -0.67, z: -0.3199997}
+  m_LocalPosition: {x: 0.019814968, y: 0.967, z: -0.022}
   m_LocalScale: {x: 1.8700988, y: 1.8700988, z: 1.8700988}
   m_Children:
   - {fileID: 5139814389269865627}
