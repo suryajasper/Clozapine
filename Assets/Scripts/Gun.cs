@@ -33,9 +33,6 @@ public class Gun : MonoBehaviourPunCallbacks
     [Header("Info")]
     public string gunName;
 
-    [Header("Positions")]
-    public Transform muzzleLoc;
-
     [Header("Prefabs")]
     public ParticleSystem muzzleFlash;
     public ParticleSystem bloodEffect;
@@ -116,6 +113,7 @@ public class Gun : MonoBehaviourPunCallbacks
             shootTimer = Time.time;
             currentMagCap--;
             UpdateAmmoUI();
+            muzzleFlash.Play();
             RaycastHit hit;
             Vector3 rayRot = camera.transform.TransformDirection(Vector3.forward);
             if (!Input.GetMouseButton(1))
