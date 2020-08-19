@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine.SceneManagement;
@@ -6,13 +8,16 @@ using UnityEngine.SceneManagement;
 public class RoomManager : MonoBehaviourPunCallbacks
 {
     public string roomName = "Room01";
-    public Transform spawnPoint;
+    public List<Transform> spawnPoint;
     public GameObject playerPref;
     public bool isConnected = false;
     public GameObject camera;
 
+    private System.Random random;
+
     private void Start()
     {
+        random = new System.Random();
         print("Connecting to server...");
 
         PhotonNetwork.GameVersion = "0.1";
@@ -35,10 +40,11 @@ public class RoomManager : MonoBehaviourPunCallbacks
 
     public void SpawnPlayer()
     {
-        GameObject pl = PhotonNetwork.Instantiate(playerPref.name, spawnPoint.position, spawnPoint.rotation, 0) as GameObject;
+        Transform randomSpawnPoint = spawnPoint[random.Next(0, spawnPoint.Count - 1)];
+        GameObject pl = PhotonNetwork.Instantiate(playerPref.name, randomSpawnPoint.position, randomSpawnPoint.rotation, 0) as GameObject;
         pl.GetComponent<PlayerController3D>().enabled = true;
         camera.SetActive(false);
-        pl.GetComponent<PlayerController3D>().multiplayerGraphics.SetActive(false);
+        //pl.GetComponent<PlayerController3D>().multiplayerGraphics.SetActive(false);
     }
 
     public override void OnDisconnected(DisconnectCause cause)
@@ -46,5 +52,3 @@ public class RoomManager : MonoBehaviourPunCallbacks
         print("Disconnected from server! " + cause.ToString());
     }
 }
-
-

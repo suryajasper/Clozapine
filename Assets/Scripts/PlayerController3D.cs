@@ -33,9 +33,13 @@ public class PlayerController3D : MonoBehaviourPunCallbacks
     public float jumpForce = 3f;
     public float speed = 12f;
     public float gravity = -9.81f;
+
+    private RoomManager roomManager;
+    private bool isDead;
     
     void Start()
     {
+        roomManager = GameObject.FindGameObjectWithTag("RoomManager").GetComponent<RoomManager>();
         cameraGameObject.SetActive(photonView.IsMine);
         controller = GetComponent<CharacterController>();
     }
@@ -101,7 +105,6 @@ public class PlayerController3D : MonoBehaviourPunCallbacks
         controller.Move(velocity * Time.deltaTime);
     }
 
-    [PunRPC]
     public void applyDamage(float dmg)
     {
         health -= dmg;
@@ -109,12 +112,14 @@ public class PlayerController3D : MonoBehaviourPunCallbacks
             DIE();
     }
 
-    [PunRPC]
     public void DIE()
     {
-        Destroy(Instantiate(ragdollPrefab, transform.position, transform.rotation), 8f);
-        PhotonNetwork.Destroy(gameObject);
-        PhotonNetwork.Disconnect();
-        SceneManager.LoadScene(0);
+        if (!isDead)
+        {
+            isDead = true;
+            Destroy(Instantiate(ragdollPrefab, transform.position, transform.rotation), 8f);
+            roomManager.SpawnPlayer();
+            PhotonNetwork.Destroy(gameObject);
+        }
     }
 }

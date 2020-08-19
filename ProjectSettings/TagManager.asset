@@ -15,6 +15,7 @@ TagManager:
   - ReloadFill
   - HitFeedback
   - Crosshairs
+  - RoomManager
   layers:
   - Default
   - TransparentFX
