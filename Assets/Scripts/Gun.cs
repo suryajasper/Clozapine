@@ -137,6 +137,7 @@ public class Gun : MonoBehaviourPunCallbacks
                 {
                     Destroy(Instantiate(metalHitEffect, hit.point, Quaternion.identity), 4f);
                 }
+
             }
         }
         if (currentMagCap == 0)

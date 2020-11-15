@@ -78,17 +78,18 @@
     <Compile Include="Assets/Assets_1/Prefab/Effects/Shared/Scripts/ParticleExamples.cs" />
     <Compile Include="Assets/Shared/Ramps/Runtime/RampAsset.cs" />
     <Compile Include="Assets/Scripts/gunMultiplayerGraphics.cs" />
+    <Compile Include="Assets/ThirdPersonController.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/TextMesh Pro/Resources/Shaders/TMPro.cginc" />
-     <None Include="Assets/Assets_1/Models/Weapons/Other/Scope/Zoom.shader" />
+     <None Include="Assets/Assets_1/Prefab/Models/Weapons/Other/Scope/Zoom.shader" />
      <None Include="Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.xml" />
      <None Include="Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Overlay.shader" />
-     <None Include="Assets/Assets_1/Models/Weapons/Ammo/Readme.txt" />
+     <None Include="Assets/Assets_1/Prefab/Models/Weapons/Ammo/Readme.txt" />
      <None Include="Assets/Photon/PhotonUnityNetworking/changelog.txt" />
      <None Include="Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap.shader" />
      <None Include="Assets/Assets_1/Shaders/Stencil Mask.shader" />
-     <None Include="Assets/Assets_1/Models/Weapons/Readme.txt" />
+     <None Include="Assets/Assets_1/Prefab/Models/Weapons/Readme.txt" />
      <None Include="Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface.shader" />
      <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
@@ -742,6 +743,12 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

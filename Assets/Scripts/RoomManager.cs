@@ -14,9 +14,12 @@ public class RoomManager : MonoBehaviourPunCallbacks
     public GameObject camera;
 
     private System.Random random;
+    private GameObject ammoUI;
 
     private void Start()
     {
+        ammoUI = GameObject.FindGameObjectWithTag("ammo");
+        ammoUI.SetActive(false);
         random = new System.Random();
         print("Connecting to server...");
 
@@ -40,6 +43,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
 
     public void SpawnPlayer()
     {
+        ammoUI.SetActive(true);
         Transform randomSpawnPoint = spawnPoint[random.Next(0, spawnPoint.Count - 1)];
         GameObject pl = PhotonNetwork.Instantiate(playerPref.name, randomSpawnPoint.position, randomSpawnPoint.rotation, 0) as GameObject;
         pl.GetComponent<PlayerController3D>().enabled = true;

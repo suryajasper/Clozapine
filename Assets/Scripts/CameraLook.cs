@@ -3,7 +3,7 @@ using Photon.Pun;
 
 public class CameraLook : MonoBehaviourPunCallbacks
 {
-    [SerializeField] private Transform noRecoilCam;
+    //[SerializeField] private Transform noRecoilCam;
 
     public float sensitivity = 100f;
     public float recoilSpeed = 5f;
@@ -20,9 +20,9 @@ public class CameraLook : MonoBehaviourPunCallbacks
 
     void Start()
     {
-        random = new System.Random();
+        random = new System.Random();/*
         noRecoilCam.position = transform.position;
-        noRecoilCam.rotation = transform.rotation;
+        noRecoilCam.rotation = transform.rotation;*/
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -38,12 +38,12 @@ public class CameraLook : MonoBehaviourPunCallbacks
 
     public void BalanceNoRecoilCam()
     {
-        noRecoilCam.localRotation = transform.localRotation;
+        //noRecoilCam.localRotation = transform.localRotation;
     }
 
     void Update()
     {
-        if (!photonView.IsMine) return;
+        // if (!photonView.IsMine) return;
         float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * sensitivity * Time.deltaTime;
 
@@ -53,7 +53,7 @@ public class CameraLook : MonoBehaviourPunCallbacks
         Vector3 RecoilLerp = Vector3.Lerp(transform.localRotation.eulerAngles, transform.localRotation.eulerAngles - recoil, 4f * Time.deltaTime);
 
         transform.localRotation = Quaternion.Euler(xRotation + (isShooting ? RecoilLerp.y : 0f), 0f, 0f);
-        noRecoilCam.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+        //noRecoilCam.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
 
         player.Rotate(Vector3.up * mouseX);
     }
